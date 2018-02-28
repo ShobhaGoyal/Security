@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.10 svn-revision#919b322c92f13ad085a933e8dd6dd35d4947364b. -->
+
+<xs:schema targetNamespace="http://serviceExample.com" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://serviceExample.com">
+
+<xs:element name="email">
+<xs:simpleType> 
+    <xs:annotation> 
+        <xs:documentation>the total voltage (0 - 99999)</xs:documentation> 
+    </xs:annotation> 
+    <xs:restriction base= "xs:nonNegativeInteger"> 
+        <xs:maxInclusive value= "99999" /> 
+    </xs:restriction> 
+</xs:simpleType> 
+</xs:element>
+<xs:simpleType name= "YesNoString"> 
+    <xs:restriction base= "xs:string"> 
+        <xs:enumeration value= "yes" /> 
+        <xs:enumeration value= "no" /> 
+    </xs:restriction> 
+</xs:simpleType> 
+</xs:schema>
