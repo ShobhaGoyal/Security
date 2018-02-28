@@ -1,0 +1,99 @@
+package TOGeneration;
+
+import java.io.File;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+
+import org.w3c.dom.*;
+
+import GetXsdConstraints.MNode;
+import ParseXML.XMLParser;
+
+public class RemoveAttrQuote {
+
+	Document doc;
+	HashMap<String,Element> corresp_parent = new HashMap<String,Element>();
+	
+	public void remove() throws ParserConfigurationException, TransformerException
+	{
+		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+		DocumentBuilder db = dbf.newDocumentBuilder();
+		doc = db.newDocument();
+		
+		XMLParser parser = new XMLParser();
+		List<MNode> mnodelist = parser.getMNodeList();
+	
+		
+		for(int i=0;i<mnodelist.size();i++)
+		{			
+			MNode mnode = mnodelist.get(i);
+			String element = mnode.getElem_name();
+			
+			if(!element.equals("#text"))
+			{
+				
+				Element child = doc.createElement(element);
+				
+				String parent = mnode.getParent();
+				//System.out.println(element+" "+parent);
+				
+				HashMap<String,String> attributes = mnode.getAttributes();
+				
+				for(Map.Entry<String, String> e : attributes.entrySet())
+				{
+					String attname = e.getKey();
+					String attvalue = e.getValue();
+					Attr attr = doc.createAttribute(attname);
+				    attr.setValue(attvalue);
+				    child.setAttributeNode(attr);	
+				}
+				
+				String textvalue = "";
+				if((i+1)<mnodelist.size())
+				{
+					MNode nextnode = mnodelist.get(i+1);
+					String nextname = nextnode.getElem_name();
+					if(nextname.equals("#text"))
+						textvalue = nextnode.getTextvalue();
+				}
+				child.setTextContent(textvalue);
+				
+				if(parent == null)
+				{
+					doc.appendChild(child);
+					corresp_parent.put(child.getNodeName(), child);
+				}
+				else
+				{
+					//System.out.println(parent+child);
+				    if(corresp_parent.containsKey(parent))
+				    	corresp_parent.get(parent).appendChild(child);
+				    else
+				    {
+				    	Element parent_elem = doc.createElement(parent);
+				    	parent_elem.appendChild(child);
+				    }
+				}
+			}
+			
+		}
+		
+		TransformerFactory transformerFactory = TransformerFactory.newInstance();
+	    Transformer transformer = transformerFactory.newTransformer();
+	    DOMSource source = new DOMSource(doc);
+	    StreamResult result = new StreamResult(new File("src/editedMessage.xml"));
+	    transformer.transform(source, result);
+	    System.out.println("File has saved");
+	}
+	
+}

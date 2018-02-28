@@ -1,0 +1,89 @@
+package ParseXML;
+
+import GetXsdConstraints.*;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.parsers.*;
+
+import org.w3c.dom.*;
+import org.xml.sax.SAXException;
+
+
+
+public class XMLParser {
+	
+	private static final List<String> elements = new ArrayList<String>();
+	
+	private void parseXmlFile(){
+	DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+	
+	try {
+
+		//Using factory get an instance of document builder
+		DocumentBuilder db = dbf.newDocumentBuilder();
+
+		//parse using builder to get DOM representation of the XML file
+		Document dom = db.parse("src/sampleMessage.xml");
+		parseDocument(dom);
+
+	}catch(ParserConfigurationException pce) {
+		pce.printStackTrace();
+	}catch(SAXException se) {
+		se.printStackTrace();
+	}catch(IOException ioe) {
+		ioe.printStackTrace();
+	}
+	
+  }
+	
+   private void getChild(Node node,Node prev)
+   {
+	   NodeList n = node.getChildNodes();
+	   if(n!=null && n.getLength()>0)
+	   {
+		   for(int i = 0 ; i < n.getLength();i++) {
+			   Node nod = n.item(i);
+			   if(!(nod.getNodeValue()== null) && !(nod.getNodeValue().equals("\n")))
+			   {
+				   elements.add(prev.getNodeName());
+			   }
+			   prev = nod;
+			   getChild(nod,prev);
+		   }
+	   }
+   }
+   private void parseDocument(Document dom)
+   {
+	   NodeList nl = dom.getChildNodes();
+	 
+	   if(nl != null && nl.getLength() > 0) {
+			for(int i = 0 ; i < nl.getLength();i++) {
+
+				Node node = nl.item(i);
+				Node prev = node;
+				getChild(node,prev);				
+			}
+		}	   
+   }
+   
+   public void getMNode()
+   {
+	   XMLParser xp = new XMLParser();
+	   xp.parseXmlFile();
+	   XSDParserTest test = new XSDParserTest();
+	   for (String str : elements)
+		   test.parse(str);
+	   
+	   List<MNode> mnodelist = XSDParser.mnodelist;
+	   for(MNode mnode : mnodelist)
+	   {
+		   String elem = mnode.getElem_name();
+		   Restriction r = mnode.getRestriction();
+		   System.out.println(elem+" => ");
+		   r.print();
+	   }
+	   
+   }
+}

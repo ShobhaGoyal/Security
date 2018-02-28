@@ -1,0 +1,13 @@
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email id="1" class="email">apple@gmail.com</email>
+<groupid>10"</groupid>
+<password>apple</password>
+<userid>0</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>

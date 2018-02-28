@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/home/shobha/project-workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+761824695.index
+1398149595.index
+3224446000.index
+1940461027.index
+1042024589.index
+1281431142.index
+736391685.index

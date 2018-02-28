@@ -1,0 +1,70 @@
+package TOGeneration;
+
+import java.io.File;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+
+import org.w3c.dom.*;
+
+import GetXsdConstraints.MNode;
+import ParseXML.XMLParser;
+
+public class RemoveAttrQuote {
+
+	Document doc;
+	
+	public void remove() throws ParserConfigurationException, TransformerException
+	{
+		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+		DocumentBuilder db = dbf.newDocumentBuilder();
+		doc = db.newDocument();
+		
+		XMLParser parser = new XMLParser();
+		List<MNode> mnodelist = parser.getMNodeList();
+		
+		for(MNode mnode : mnodelist)
+		{
+			String element = mnode.getElem_name();
+			System.out.println(element);
+			Element child = doc.createElement(element);
+			String parent = mnode.getParent();
+			
+			HashMap<String,String> attributes = mnode.getAttributes();
+			
+			for(Map.Entry<String, String> e : attributes.entrySet())
+			{
+				String attname = e.getKey();
+				String attvalue = e.getValue();
+				Attr attr = doc.createAttribute(attname);
+			    attr.setValue(attvalue);
+			    child.setAttributeNode(attr);	
+			}
+			if(parent == null)
+				doc.appendChild(child);
+			else
+			{
+				Element parent_elem = doc.createElement(parent);
+				parent_elem.appendChild(child);
+			}
+			
+		}
+		
+		TransformerFactory transformerFactory = TransformerFactory.newInstance();
+	    Transformer transformer = transformerFactory.newTransformer();
+	    DOMSource source = new DOMSource(doc);
+	    StreamResult result = new StreamResult(new File("src/editedMessage.xml"));
+	    transformer.transform(source, result);
+	    System.out.println("File has saved");
+	}
+	
+}
