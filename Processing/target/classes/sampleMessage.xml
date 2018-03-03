@@ -5,7 +5,7 @@
 <email id="1" class="email">apple@gmail.com</email>
 <groupid>10</groupid>
 <password>apple</password>
-<userid>0</userid>
+<userid>20</userid>
 <username>apple</username>
 </ns2:EmployeeTypeInputParam>
 </ns2:addEmployeeMethod>

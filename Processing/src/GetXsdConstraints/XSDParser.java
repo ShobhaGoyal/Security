@@ -190,16 +190,20 @@ public class XSDParser implements DOMErrorHandler {
       */
     //  List<MNode> elementslist = XMLParser.elements;
       new_mnodelist = XMLParser.mnodelist;
+      
       //mnodelist = XMLParser.elements;
     //  int set = 0;
       
       HashMap<String,String> attr = new HashMap<String,String>();
       
+      int index = 0;
       for(MNode mn : new_mnodelist)
       {
     	  if(mn.getElem_name().equals(xsdElement.getName()))
     	  {
     		  mn.setRestriction(res);
+    		  new_mnodelist.set(index,mn);
+    		  XMLParser.mnodelist = new_mnodelist;
     		  /*m.setParent(mn.getParent());
     		  m.setTextvalue(mn.getTextvalue());
     		  if(!mn.getAttributes().isEmpty())
@@ -211,8 +215,8 @@ public class XSDParser implements DOMErrorHandler {
     			  break;
     		  }*/
     	  }
-    	  else
-    		  mn.setRestriction(null);
+    	 
+    	  index++;
       }
    
       /*if(set==0)

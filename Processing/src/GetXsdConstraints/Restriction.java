@@ -15,7 +15,7 @@ public class Restriction {
 	 private String maxIncValue = null; 
 	 private String minIncValue = null; 
 	 private String maxExcValue = null; 
-	 private String minExcValue = null; 
+     private String minExcValue = null; 
 	 private String length = null; 
 	 private String maxLength = null; 
 	 private String minLength = null; 
@@ -48,6 +48,44 @@ public class Restriction {
 		            }
 		        }
 	 }
+	 
+	 public Vector<String> getEnumeration() {
+			return enumeration;
+		}
+		public String getMaxIncValue() {
+			return maxIncValue;
+		}
+		public String getMinIncValue() {
+			return minIncValue;
+		}
+		public String getMaxExcValue() {
+			return maxExcValue;
+		}
+		public String getMinExcValue() {
+			return minExcValue;
+		}
+		public String getLength() {
+			return length;
+		}
+		public String getMaxLength() {
+			return maxLength;
+		}
+		public String getMinLength() {
+			return minLength;
+		}
+		public StringList getPattern() {
+			return pattern;
+		}
+		public String getTotalDigits() {
+			return totalDigits;
+		}
+		public String getFractionDigits() {
+			return fractionDigits;
+		}
+		public String getWhitespace() {
+			return whitespace;
+		}
+		
 	 public void print()
 	 {
 		 System.out.println("maxIncValue: "+maxIncValue);
