@@ -4,9 +4,9 @@
 <ns2:EmployeeTypeInputParam>
 <email class="email" id="1">apple@gmail.com</email>
 <groupid>10</groupid>
-<password>apple</password>
+<password></ZLa0>uF04</password>
 <userid>20</userid>
-<username>appl'e</username>
+<username>apple</username>
 </ns2:EmployeeTypeInputParam>
 </ns2:addEmployeeMethod>
 </S:Body>
@@ -16,7 +16,7 @@
 <S:Body>
 <ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
 <ns2:EmployeeTypeInputParam>
-<email class="email" id="1">apple@gmail.com</email>
+<email class="email" id="1">apple@gmail".com</email>
 <groupid>10</groupid>
 <password>apple</password>
 <userid>20</userid>
@@ -31,24 +31,10 @@
 <ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
 <ns2:EmployeeTypeInputParam>
 <email class="email" id="1">apple@gmail.com</email>
-<groupid>10</groupid>
+<groupid></-5>3</groupid>
 <password>apple</password>
-<userid>20</userid>
-<username>apple</username>
-</ns2:EmployeeTypeInputParam>
-</ns2:addEmployeeMethod>
-</S:Body>
-</S:Envelope>
-
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
-<S:Body>
-<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
-<ns2:EmployeeTypeInputParam>
-<email class="email" id="1">apple"@gmail.com</email>
-<groupid>10</groupid>
-<password>apple</password>
-<userid>20</userid>
-<username>apple</username>
+<userid>2&0</userid>
+<username>appl"e</username>
 </ns2:EmployeeTypeInputParam>
 </ns2:addEmployeeMethod>
 </S:Body>
@@ -59,10 +45,10 @@
 <ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
 <ns2:EmployeeTypeInputParam>
 <email class="email" id="1">apple@gmail.com</email>
-<groupid>10</groupid>
+<groupid></-5>432</groupid>
 <password>apple</password>
 <userid>20</userid>
-<username>app"le</username>
+<username></>a</username>
 </ns2:EmployeeTypeInputParam>
 </ns2:addEmployeeMethod>
 </S:Body>
@@ -72,10 +58,10 @@
 <S:Body>
 <ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
 <ns2:EmployeeTypeInputParam>
-<email class="email" id="1">apple@gmail.com</email>
-<groupid>10</groupid>
-<password>apple</password>
-<userid>20</userid>
+<email class="email" id="1"></>04@WqKF.</email>
+<groupid>"10</groupid>
+<password>apple</#text><#text>apple</password>
+<userid>20</#text><#text>20</userid>
 <username>apple</username>
 </ns2:EmployeeTypeInputParam>
 </ns2:addEmployeeMethod>
@@ -86,63 +72,7 @@
 <S:Body>
 <ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
 <ns2:EmployeeTypeInputParam>
-<email class="email" id="1">apple@gmail.com</email>
-<groupid>10</groupid>
-<password>apple</password>
-<userid>20</userid>
-<username>apple</username>
-</ns2:EmployeeTypeInputParam>
-</ns2:addEmployeeMethod>
-</S:Body>
-</S:Envelope>
-
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
-<S:Body>
-<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
-<ns2:EmployeeTypeInputParam>
-<email class="email" id="1">apple@gmail.com</email>
-<groupid>10</groupid>
-<password>a&pple</password>
-<userid>20</userid>
-<username>apple</username>
-</ns2:EmployeeTypeInputParam>
-</ns2:addEmployeeMethod>
-</S:Body>
-</S:Envelope>
-
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
-<S:Body>
-<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
-<ns2:EmployeeTypeInputParam>
-<email class="email" id="1">apple@gmail.com</email>
-<groupid>10</groupid>
-<password>apple</password>
-<userid>20</userid>
-<username>apple</username>
-</ns2:EmployeeTypeInputParam>
-</ns2:addEmployeeMethod>
-</S:Body>
-</S:Envelope>
-
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
-<S:Body>
-<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
-<ns2:EmployeeTypeInputParam>
-<email class="email" id="1">apple@gmail.'com</email>
-<groupid>10</groupid>
-<password>apple</password>
-<userid>20</userid>
-<username>apple</username>
-</ns2:EmployeeTypeInputParam>
-</ns2:addEmployeeMethod>
-</S:Body>
-</S:Envelope>
-
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
-<S:Body>
-<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
-<ns2:EmployeeTypeInputParam>
-<email class="email" id="1">apple@gmail.com</email>
+<email class="email" id="1">a<pple@gmail.com</email>
 <groupid>10</groupid>
 <password>apple</password>
 <userid>&lt;20</userid>
@@ -157,7 +87,7 @@
 <ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
 <ns2:EmployeeTypeInputParam>
 <email class="email" id="1">apple@gmail.com</email>
-<groupid>10</groupid>
+<groupid>10</groupid><groupid>10</groupid>
 <password>apple</password>
 <userid>20</userid>
 <username>apple</username>
@@ -173,134 +103,9 @@
 <email class="email" id="1">apple@gmail.com</email>
 <groupid>10</groupid>
 <password>apple</password>
-<userid>2&gt;0</userid>
+<password>apple</password>
+<userid></>+84</userid>
 <username>ap&ple</username>
-</ns2:EmployeeTypeInputParam>
-</ns2:addEmployeeMethod>
-</S:Body>
-</S:Envelope>
-
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
-<S:Body>
-<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
-<ns2:EmployeeTypeInputParam>
-<email class="email" id="1">apple@gmail.com</email>
-<groupid>10</groupid>
-<password>apple</password>
-<userid>20</userid>
-<username>apple</username>
-</ns2:EmployeeTypeInputParam>
-</ns2:addEmployeeMethod>
-</S:Body>
-</S:Envelope>
-
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
-<S:Body>
-<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
-<ns2:EmployeeTypeInputParam>
-<email class="email" id="1">apple@gmail.com</email>
-<groupid>10</groupid>
-<password>apple</password>
-<userid>20</userid>
-<username>apple</username>
-</ns2:EmployeeTypeInputParam>
-</ns2:addEmployeeMethod>
-</S:Body>
-</S:Envelope>
-
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
-<S:Body>
-<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
-<ns2:EmployeeTypeInputParam>
-<email class="email" id="1">apple@gmail.com</email>
-<groupid>&amp;10</groupid>
-<password>apple</password>
-<userid>20</userid>
-<username>appl&amp;e</username>
-</ns2:EmployeeTypeInputParam>
-</ns2:addEmployeeMethod>
-</S:Body>
-</S:Envelope>
-
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
-<S:Body>
-<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
-<ns2:EmployeeTypeInputParam>
-<email class="email" id="1">apple@gmail.com</email>
-<groupid>"10</groupid>
-<password>apple</password>
-<userid>20</userid>
-<username>apple</username>
-</ns2:EmployeeTypeInputParam>
-</ns2:addEmployeeMethod>
-</S:Body>
-</S:Envelope>
-
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
-<S:Body>
-<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
-<ns2:EmployeeTypeInputParam>
-<email class="email" id="1">apple@gmail.com</email>
-<groupid>10</groupid>
-<password>apple</password>
-<userid>20</userid>
-<username>apple</username>
-</ns2:EmployeeTypeInputParam>
-</ns2:addEmployeeMethod>
-</S:Body>
-</S:Envelope>
-
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
-<S:Body>
-<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
-<ns2:EmployeeTypeInputParam>
-<email class="email" id="1">apple@gmail.com</email>
-<groupid>10</groupid>
-<password>ap&lt;ple</password>
-<userid>20</userid>
-<username>apple</username>
-</ns2:EmployeeTypeInputParam>
-</ns2:addEmployeeMethod>
-</S:Body>
-</S:Envelope>
-
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
-<S:Body>
-<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
-<ns2:EmployeeTypeInputParam>
-<email class="email" id="1">apple@gmail.com</email>
-<groupid>10</groupid>
-<password>apple</password>
-<userid>20</userid>
-<username>apple</username>
-</ns2:EmployeeTypeInputParam>
-</ns2:addEmployeeMethod>
-</S:Body>
-</S:Envelope>
-
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
-<S:Body>
-<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
-<ns2:EmployeeTypeInputParam>
-<email class="email" id="1">apple@gmail.com</email>
-<groupid>10</groupid>
-<password>apple</password>
-<userid>20</userid>
-<username>apple</username>
-</ns2:EmployeeTypeInputParam>
-</ns2:addEmployeeMethod>
-</S:Body>
-</S:Envelope>
-
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
-<S:Body>
-<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
-<ns2:EmployeeTypeInputParam>
-<email class="email" id="1">apple@gmail.com</email>
-<groupid>10</groupid>
-<password>ap>ple</password>
-<userid>20</userid>
-<username>apple</username>
 </ns2:EmployeeTypeInputParam>
 </ns2:addEmployeeMethod>
 </S:Body>

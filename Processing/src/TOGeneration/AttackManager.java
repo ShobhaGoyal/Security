@@ -24,9 +24,12 @@ public class AttackManager {
 		return mnode;
 	}
 	
-	public void duplicatetag(MNode mnode)   // create previous tag again so that its value will overwrite previous one
+	public MNode duplicatetag(MNode mnode,MNode parent)   // create previous tag again so that its value will overwrite previous one
 	{
+		DuplicateTag dt = new DuplicateTag();
+		mnode = dt.duplicate(mnode,parent);
 		System.out.println("duplicatetag attack on "+mnode.getTextvalue());
+		return mnode;
 	}
 	
 	public void rewritetag(MNode mnode)   // replace previous tag and create same tag with malicious value

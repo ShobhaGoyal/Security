@@ -1,5 +1,6 @@
 package Attacks;
 
+import java.util.Random;
 import java.util.Vector;
 
 import org.apache.xerces.xs.StringList;
@@ -24,27 +25,66 @@ public class ClosingTag {
 	 {
 		 String pattern;
 		 
-		 if(patternlist == null)
-			 pattern = ".";
+		 if(patternlist == null || patternlist.isEmpty())
+			 pattern = "[a-zA-Z0-9]+";
 		 else
 			 pattern = (String) patternlist.get(0);
-		System.out.println(pattern);
-		 String str = "";
-		 return str;
+		System.out.println("1 "+pattern);
+		
+		Generex generex = new Generex(pattern);
+		String randomStr = generex.random();
+		
+		Random rn = new Random();
+		int ind = rn.nextInt(randomStr.length());
+		randomStr = "</"+randomStr.substring(0, ind)+">"+randomStr.substring(ind,randomStr.length());
+		System.out.println(randomStr);
+		
+		 return randomStr;
 	 }
 	 
-	 private String generateString(int L,StringList pattern,int casetype)
+	 private String generateString(int Lm,int LM,StringList patternlist,int casetype)
 	 {
-		 System.out.println(pattern);
+		
+		 String pattern;
+		 if(patternlist == null || patternlist.isEmpty())
+		 {
+			 pattern = "[a-zA-Z0-9]+";
+		 }
+		 else
+			 pattern = (String) patternlist.get(0);
 		 
-		 String str = "";
+		 System.out.println("2 "+pattern);		   
+	     String randomStr = "";
+	     
 		 switch(casetype)
 		 {
-		 case 0:	break;
-		 case 1:	break;
-		 case 2:	break;
+		 case 0:	pattern += "{"+Lm+",}";
+			 		Generex generex = new Generex(pattern);
+					randomStr = generex.random();			 			
+			 		break;
+			 		
+		 case 1:	pattern += "{0,"+LM+"}";
+		 			generex = new Generex(pattern);
+		 			randomStr = generex.random();
+		 			if(randomStr.length()>LM)
+		 				randomStr = randomStr.substring(0,LM);
+		 				
+			 		break;
+			 		
+		 case 2:	pattern += "{"+Lm+","+LM+"}";
+					generex = new Generex(pattern);
+					randomStr = generex.random();
+					if(randomStr.length()>LM)
+						randomStr = randomStr.substring(0,LM);
+			 		break;
 		 }
-		 return str;
+		 
+		int len = randomStr.length();
+		Random rn = new Random();
+		int ind = rn.nextInt(len);
+		randomStr = "</"+randomStr.substring(0, ind)+">"+randomStr.substring(ind,len);
+		System.out.println(randomStr);
+		return randomStr;
 	 }
 	 
 	public MNode addrandomclosingtag(MNode mnode,MNode parent)
@@ -54,6 +94,7 @@ public class ClosingTag {
 		int max = Integer.MAX_VALUE;
 		int len;
 		int minlen=0,maxlen=10;
+		String value = "";
 		
 		if(res!=null)
 		{
@@ -93,17 +134,21 @@ public class ClosingTag {
 			}
 				
 			if(minLength==null && maxLength==null)
-				generateString(pattern);
+				value = generateString(pattern);
 			if(minLength != null && maxLength==null)
-				generateString(minlen,pattern,0);
+				value = generateString(minlen,0,pattern,0);
 			else if(maxLength != null && minLength==null)
-				generateString(maxlen,pattern,1);
+				value = generateString(0,maxlen,pattern,1);
+			else if(maxLength != null && minLength !=null)
+				value = generateString(minlen,maxlen,pattern,2);
 		}
 		else
 		{
 			len = Integer.parseInt(length);
-			generateString(len,pattern,2);
+			value = generateString(len,len,pattern,2);
 		}
+		if(!value.equals(""))
+			mnode.setTextvalue(value);
 		return mnode;
 	}
 	

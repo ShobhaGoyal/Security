@@ -115,7 +115,7 @@ public class MaliciousGen {
 			    						break;
 			    				case 1: mnode = attackobj.addrandomclosingtag(mnode,parent_of_text);
 			    						break;
-			    				case 2: attackobj.duplicatetag(mnode);break;
+			    				case 2: attackobj.duplicatetag(mnode,parent_of_text);break;
 			    				case 3: attackobj.rewritetag(mnode);break;
 			    				}		
 
