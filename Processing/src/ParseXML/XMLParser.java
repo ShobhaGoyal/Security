@@ -146,7 +146,7 @@ public class XMLParser {
 	   
 	   for (MNode str : elements)
 	   {
-		  // System.out.println(str.getElem_name());
+		   //System.out.println(str.getElem_name());
 		   test.parse(str.getElem_name());
 	   }
 	   return XSDParser.new_mnodelist;   // new_mnodelist also contains restrictions now for each node present in elements array

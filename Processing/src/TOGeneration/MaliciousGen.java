@@ -9,7 +9,9 @@ import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.io.StringReader;
 import java.io.StringWriter;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
@@ -35,6 +37,9 @@ public class MaliciousGen {
 
 	Document doc;
 	HashMap<String,Element> corresp_parent = new HashMap<String,Element>();
+	private static int rewritestatus = 0;
+	private static int tagindex = 0;
+	private static int is_attackhappened = 0;
 	
 	public void remove() throws TransformerException, ParserConfigurationException, IOException, SAXException
 	{
@@ -44,8 +49,11 @@ public class MaliciousGen {
 		
 		XMLParser parser = new XMLParser();
 		List<MNode> mnodelist = parser.getMNodeList();
-		Map<String,MNode> element_MNode_Map = new HashMap<String,MNode>();
 		
+		LinkedHashMap<MNode,MNode> rewritetags = new LinkedHashMap<MNode,MNode>();
+		
+		Map<String,MNode> element_MNode_Map = new HashMap<String,MNode>();
+		List<MNode> elements = XMLParser.elements;
 		
 		for(int i=0;i<mnodelist.size();i++)
 		{			
@@ -101,23 +109,79 @@ public class MaliciousGen {
 			    			Random randomNum = new Random();
 			    			int attack = randomNum.nextInt(2);
 			    			
-			    			if(attack==0)
+			    			if(attack==0 && rewritestatus==0)
 			    			{
-			    				System.out.println("No attack on "+mnode.getTextvalue());
+			    				System.out.println("No attack on "+parent_of_text.getElem_name());
 			    			}
-			    			else
+			    			if((attack==0 && rewritestatus==1) || attack==1 || (elements.get(elements.size()-1).getElem_name()==parent_of_text.getElem_name() && is_attackhappened!=1))
 			    			{
+			    				
 			    				AttackManager attackobj = new AttackManager();
-			    				attack = randomNum.nextInt(4);
-			    				switch(attack)
+			    							    				
+			    				if(rewritestatus == 0)
 			    				{
-			    				case 0: mnode = attackobj.addmetacharacter(mnode);
-			    						break;
-			    				case 1: mnode = attackobj.addrandomclosingtag(mnode,parent_of_text);
-			    						break;
-			    				case 2: attackobj.duplicatetag(mnode,parent_of_text);break;
-			    				case 3: attackobj.rewritetag(mnode);break;
-			    				}		
+			    					do
+			    					{
+				    					attack = randomNum.nextInt(4);
+					    				switch(attack)
+					    				{
+					    				case 0: mnode = attackobj.addmetacharacter(mnode,parent_of_text); is_attackhappened = 1;
+					    						break;
+					    				case 1: mnode = attackobj.addrandomclosingtag(mnode,parent_of_text); is_attackhappened = 1;
+					    						break;
+					    				case 2: attackobj.duplicatetag(mnode,parent_of_text); is_attackhappened = 1;
+					    						break;
+					    				case 3: // to find index of this node in elements of XMLParser
+					    						tagindex = 0;
+					    						for(MNode x : elements)
+					    						{
+					    							if(x.getElem_name() == parent_of_text.getElem_name())
+					    								break;
+					    							tagindex++;
+					    						}
+					    						if(tagindex!=(elements.size()-1))   //i.e not last element because rewrite tag attack won't be possible then
+					    						{
+					    							mnode = attackobj.rewritetag(mnode,parent_of_text); is_attackhappened = 1;
+					    							rewritestatus = 1;
+					    						}
+					    						else
+					    							System.out.println("1 No attack on "+parent_of_text.getElem_name());
+					    						break;
+					    				}	
+			    					}while(is_attackhappened!=1);
+			    				}
+			    				else
+			    				{
+			    					Random rd = new Random();
+			    					int finish = rd.nextInt(3);
+			    					System.out.println(finish+" "+tagindex+" "+mnode.getTextvalue());
+			    					if(finish == 1 || tagindex==(elements.size()-2))
+			    					{
+			    						String val = "-->";
+			    						if(!rewritetags.isEmpty())
+			    						{
+			    							for(Map.Entry<MNode,MNode> e : rewritetags.entrySet())
+			    							{
+			    								MNode nod = e.getKey();
+			    								MNode pare = e.getValue();
+			    								
+			    								val += "<" + pare.getElem_name() + ">";
+			    								val += nod.getTextvalue();
+			    								val += "</" + pare.getElem_name() + ">";
+			    							}
+			    						}
+
+		    							val += "<" + parent_of_text.getElem_name() + ">";
+		    							val += mnode.getTextvalue();
+		    							mnode.setTextvalue(val);
+			    						rewritestatus = 0;
+			    					}
+			    					else
+			    					{
+			    						tagindex++;
+			    						rewritetags.put(mnode, parent_of_text);
+			    					}
+			    				}
 
 	    						textnode.setNodeValue(mnode.getTextvalue());
 			    			}

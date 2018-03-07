@@ -7,12 +7,12 @@ import GetXsdConstraints.MNode;
 
 public class AttackManager {
 	
-	public MNode addmetacharacter(MNode mnode) throws TransformerException
+	public MNode addmetacharacter(MNode mnode,MNode parent) throws TransformerException
 	{
 		Metacharacter mc = new Metacharacter();
 		mnode = mc.addmetacharacter(mnode);
 		
-		System.out.println("addmetacharacter attack on "+mnode.getTextvalue());
+		System.out.println("addmetacharacter attack on "+parent.getElem_name());
 		return mnode;
 	}
 	
@@ -20,7 +20,7 @@ public class AttackManager {
 	{
 		ClosingTag ct = new ClosingTag();
 		mnode = ct.addrandomclosingtag(mnode,parent);
-		System.out.println("addrandomclosingtag attack on "+mnode.getTextvalue());
+		System.out.println("addrandomclosingtag attack on "+parent.getElem_name());
 		return mnode;
 	}
 	
@@ -28,13 +28,16 @@ public class AttackManager {
 	{
 		DuplicateTag dt = new DuplicateTag();
 		mnode = dt.duplicate(mnode,parent);
-		System.out.println("duplicatetag attack on "+mnode.getTextvalue());
+		System.out.println("duplicatetag attack on "+parent.getElem_name());
 		return mnode;
 	}
 	
-	public void rewritetag(MNode mnode)   // replace previous tag and create same tag with malicious value
+	public MNode rewritetag(MNode mnode,MNode parent)   // replace previous tag and create same tag with malicious value
 	{
-		System.out.println("rewritetag attack on "+mnode.getTextvalue());
+		RewriteTag rt = new RewriteTag();
+		mnode = rt.rewrite(mnode,parent);
+		System.out.println("rewritetag attack on "+parent.getElem_name());
+		return mnode;
 	}
 
 }

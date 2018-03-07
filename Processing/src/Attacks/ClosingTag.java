@@ -29,7 +29,7 @@ public class ClosingTag {
 			 pattern = "[a-zA-Z0-9]+";
 		 else
 			 pattern = (String) patternlist.get(0);
-		System.out.println("1 "+pattern);
+		//System.out.println("1 "+pattern);
 		
 		Generex generex = new Generex(pattern);
 		String randomStr = generex.random();
@@ -37,7 +37,7 @@ public class ClosingTag {
 		Random rn = new Random();
 		int ind = rn.nextInt(randomStr.length());
 		randomStr = "</"+randomStr.substring(0, ind)+">"+randomStr.substring(ind,randomStr.length());
-		System.out.println(randomStr);
+		//System.out.println(randomStr);
 		
 		 return randomStr;
 	 }
@@ -53,7 +53,7 @@ public class ClosingTag {
 		 else
 			 pattern = (String) patternlist.get(0);
 		 
-		 System.out.println("2 "+pattern);		   
+		 //System.out.println("2 "+pattern);		   
 	     String randomStr = "";
 	     
 		 switch(casetype)
@@ -83,7 +83,7 @@ public class ClosingTag {
 		Random rn = new Random();
 		int ind = rn.nextInt(len);
 		randomStr = "</"+randomStr.substring(0, ind)+">"+randomStr.substring(ind,len);
-		System.out.println(randomStr);
+		//System.out.println(randomStr);
 		return randomStr;
 	 }
 	 
