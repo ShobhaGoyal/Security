@@ -51,7 +51,8 @@ public class ApplyMO {
 			int index = rn.nextInt(metacharacters.size());
 			String mut_op = metacharacters.get(index);
 			
-			MNode element = mnodelist.get(i);			
+			MNode element = mnodelist.get(i);
+			
 			MNode newnode = new MNode();
 			
 			//////// need to change this/////

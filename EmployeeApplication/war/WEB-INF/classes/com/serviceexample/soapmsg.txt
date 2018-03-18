@@ -147,3 +147,62 @@
 </S:Body>
 </S:Envelope>
 
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>shobha</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>shobha</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>' or 1=1</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>' or 1=1</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>' or 1=1 or '</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>' or 1=1 or '</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email>shobha4goyal@gmail.com</email>
+<groupid>29</groupid>
+<password>shobha</password>
+<userid>0</userid>
+<username>shobha</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>' or 1=1 or '</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>' or 1=1 or '</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>>shobha</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>shobha</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+

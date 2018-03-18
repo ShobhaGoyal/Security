@@ -104,6 +104,7 @@ public class MaliciousGen {
 			    		if(mnode.getTextvalue().length()!=1)
 			    		{	
 			    			String par = mnode.getParent();
+			    			//System.out.println(par);
 			    			MNode parent_of_text = element_MNode_Map.get(par); // text node doesn't contain restriction, its parent does.
 			    			
 			    			Random randomNum = new Random();

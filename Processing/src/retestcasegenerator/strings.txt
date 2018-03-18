@@ -1,0 +1,24 @@
+1?\' OR 1 = 1 --
+1?\" OR 1 = 1 --
+1? OR 1 = 1 --
+1?\' OR 1 = 1
+1?\" OR 1 = 1
+1? OR 1 = 1
+1?\' OR \'a\' = \'a
+1?\" OR \"a\" = \"a
+1?\'\) OR \(\'a\' = \'a
+1?\"\) OR \(\"a\" = \"a
+1; DROP TABLE ([a-z])+; -- 
+1; TRUNCATE TABLE ([a-z])+; --
+1; SELECT ([a-z])+ FROM ([a-z]) WHERE ([a-z])+ = ([a-z])+; --
+1; SELECT IF \(([a-z])+ = ([a-z])+, 1, 0\); --
+1; INSERT INTO [a-z]+ \([a-z]+\) VALUES \([a-z]+\); --
+1; UPDATE [a-z]+ SET [a-z]+ = [a-z]+ WHERE ([a-z])+ = ([a-z])+; --
+1; DELETE FROM [a-z]+ WHERE ([a-z])+ = ([a-z])+; --
+1; SELECT ([a-z])+ FROM ([a-z]) WHERE ([a-z])+ = ([a-z])+ UNION (ALL)? SELECT ([a-z])+ FROM ([a-z]) WHERE ([a-z])+ = ([a-z])+; --
+1; CREATE DATABASE ([a-z])+; --
+1; DROP DATABASE ([a-z])+; --
+1; SHOW DATABASES; --
+1; CREATE TABLE [a-z]+ ([a-z]+ VARCHAR\\([0-9]+\\)); --
+1?\' (GROUP BY [a-z]+ (HAVING [a-z]+ = [a-z]+)?)? ORDER BY [a-z]+; --
+1?\' OR SLEEP\([0-9]+\) --
