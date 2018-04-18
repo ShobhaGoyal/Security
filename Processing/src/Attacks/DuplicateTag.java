@@ -8,7 +8,7 @@ public class DuplicateTag {
 	{
 		String elem = parent.getElem_name();
 		String value = mnode.getTextvalue();		
-		value = value + "</" + elem + ">" + "\n<"+elem + ">" + value;
+		value = value + "</" + elem + ">" + "<"+elem + ">" + value;
 		//System.out.println(value);
 		mnode.setTextvalue(value);
 		return mnode;

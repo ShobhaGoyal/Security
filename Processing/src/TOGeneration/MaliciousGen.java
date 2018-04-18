@@ -43,6 +43,8 @@ public class MaliciousGen {
 	
 	public void remove() throws TransformerException, ParserConfigurationException, IOException, SAXException
 	{
+		PrintWriter out1 = new PrintWriter(new BufferedWriter(new FileWriter("src/maliciousIp.txt", true)));
+		
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		DocumentBuilder db = dbf.newDocumentBuilder();
 		doc = db.newDocument();
@@ -112,6 +114,7 @@ public class MaliciousGen {
 			    			
 			    			if(attack==0 && rewritestatus==0)
 			    			{
+			    				out1.write(mnode.getTextvalue()+"\n");
 			    				System.out.println("No attack on "+parent_of_text.getElem_name());
 			    			}
 			    			if((attack==0 && rewritestatus==1) || attack==1 || (elements.get(elements.size()-1).getElem_name()==parent_of_text.getElem_name() && is_attackhappened!=1))
@@ -155,7 +158,7 @@ public class MaliciousGen {
 			    				{
 			    					Random rd = new Random();
 			    					int finish = rd.nextInt(3);
-			    					System.out.println(finish+" "+tagindex+" "+mnode.getTextvalue());
+			    					//System.out.println(finish+" "+tagindex+" "+mnode.getTextvalue());
 			    					if(finish == 1 || tagindex==(elements.size()-2))
 			    					{
 			    						String val = "-->";
@@ -183,7 +186,7 @@ public class MaliciousGen {
 			    						rewritetags.put(mnode, parent_of_text);
 			    					}
 			    				}
-
+			    				out1.write(mnode.getTextvalue()+"\n");
 	    						textnode.setNodeValue(mnode.getTextvalue());
 			    			}
 			    		}
@@ -224,7 +227,9 @@ public class MaliciousGen {
 	    PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("src/editedMessage_xml", true)));
 	    out.println(malicious+"\n");
 	    out.close();
-				
+			
+	    out1.write("\n");
+	    out1.close();
 		System.out.println("File has saved");
 	}
 	

