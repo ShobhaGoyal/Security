@@ -22,13 +22,15 @@ import org.xml.sax.SAXException;
 
 public class XMLParser {
 	
-	public static final List<MNode> elements = new ArrayList<MNode>();	//contains only the nodes having values like username,userid,password,etc
-	public static List<MNode> mnodelist= new ArrayList<MNode>();   // contains everything about a node
+	public static List<MNode> elements ;	//contains only the nodes having values like username,userid,password,etc
+	public static List<MNode> mnodelist;   // contains everything about a node
     private Document doc;	
     
 	private void parseXmlFile() throws TransformerException{
 		
 	DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+	elements = new ArrayList<MNode>();
+	mnodelist = new ArrayList<MNode>();
 	
 	try {
 		//Using factory get an instance of document builder
