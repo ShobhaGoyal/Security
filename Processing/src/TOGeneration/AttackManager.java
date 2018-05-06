@@ -1,9 +1,15 @@
 package TOGeneration;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Random;
+import java.util.Vector;
+
 import javax.xml.transform.TransformerException;
 
 import Attacks.*;
 import GetXsdConstraints.MNode;
+import retestcasegenerator.Generator;
 
 public class AttackManager {
 	
@@ -38,6 +44,24 @@ public class AttackManager {
 		mnode = rt.rewrite(mnode,parent);
 		System.out.println("rewritetag attack on "+parent.getElem_name());
 		return mnode;
+	}
+	
+	///////// SQL ATTACK///////////
+	
+	public MNode sqlattack(MNode mnode,MNode parent) throws FileNotFoundException, IOException
+	{
+		Generator g = new Generator();
+		g.generateSqlInput();
+		
+		Vector<String> sqlinputs = Generator.sqlinputs;
+		Random r = new Random();
+		int index = r.nextInt(sqlinputs.size());
+		
+		String input = sqlinputs.get(index);
+		
+		mnode.setTextvalue(input);
+		System.out.println("SQL attack on "+parent.getElem_name());
+		return mnode; 
 	}
 
 }

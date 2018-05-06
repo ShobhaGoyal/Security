@@ -78,12 +78,13 @@ public class ApplyMO {
 			  
 		   }
 	}
-	public static void main(String args[]) throws TransformerException, ParserConfigurationException, IOException, SAXException
+	/*public static void main(String args[]) throws TransformerException, ParserConfigurationException, IOException, SAXException
 	{
 		ApplyMO m = new ApplyMO();
 		//m.applyoperator();
 		
 		MaliciousGen at = new MaliciousGen();
-		at.remove();
-	}
+		String filename = "src/maliciousIp2.txt";
+		at.generate(filename);
+	}*/
 }

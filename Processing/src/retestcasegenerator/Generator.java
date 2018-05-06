@@ -2,9 +2,12 @@ package retestcasegenerator;
 
 import com.mifmif.common.regex.Generex;
 import java.io.*;
+import java.util.Vector;
 
 public class Generator {
-	public static void main(String args[]) throws FileNotFoundException, IOException{
+	public static Vector<String> sqlinputs = new Vector<String>();
+	
+	public void generateSqlInput() throws FileNotFoundException, IOException{
 	
 		FileInputStream fstream = new FileInputStream("src/retestcasegenerator/strings.txt");
 		BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
@@ -16,7 +19,8 @@ public class Generator {
 		while ((strLine = br.readLine()) != null){
 			Generex generex = new Generex(strLine);
 			String randomStr = generex.random();
-			System.out.println(randomStr);
+			//System.out.println(randomStr);
+			sqlinputs.addElement(randomStr);
 			bw.write(randomStr);
 			bw.newLine();
 			

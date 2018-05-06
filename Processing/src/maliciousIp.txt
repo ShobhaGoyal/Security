@@ -1,6 +1,18 @@
+apple@gmail.com
+10
+' OR SLEEP(4145) --
+20
+1" OR 1 = 1 --
+
 apple&amp;@gmail.com
 10
 apple</password><password>apple
+20
+apple
+
+mango@gmail.com
+10
+apple'
 20
 apple
 
@@ -10,8 +22,27 @@ apple@gmail.com</email><!--
 20</userid><userid>20
 apple
 
-apple@gmail.com</email><!--
---><groupid>10
-</Vl5EcCk>o
-20</userid><userid>20
+apple@gmail.com
+10</groupid><!--
+--><password>apple
+' OR 'a' = 'a
 apple
+
+apple@gmail.com</email><!--
+10
+apple
+--><groupid>10</groupid><password>apple</password><userid>20
+1 OR 1 = 1
+
+</6@qRg>y.
+10
+appl<e
+1; SELECT pbf FROM i WHERE ks = os; --
+apple
+
+apple@gmail.com
+1' OR SLEEP(64) --
+1'  ORDER BY f; --
+20
+app&le
+

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.10 svn-revision#919b322c92f13ad085a933e8dd6dd35d4947364b. -->
+
+<xs:schema targetNamespace="http://serviceExample.com" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://serviceExample.com">
+
+<xs:element type="tns:addEmployeeMethod" name="addEmployeeMethod"/>
+<xs:element type="tns:addEmployeeMethodResponse" name="addEmployeeMethodResponse"/>
+<xs:element type="tns:getEmployeeMethod" name="getEmployeeMethod"/>
+<xs:element type="tns:getEmployeeMethodResponse" name="getEmployeeMethodResponse"/>
+
+
+<xs:complexType name="getEmployeeMethod">
+<xs:sequence>
+<xs:element type="xs:string" name="EmpUsernameInputParam" minOccurs="0" form="qualified"/>
+<xs:element type="xs:string" name="EmpPasswordInputParam" minOccurs="0" form="qualified"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEmployeeMethodResponse">
+<xs:sequence>
+<xs:element type="tns:employeebean" name="return" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="employeebean">
+<xs:sequence>
+<xs:element ref="tns:email" minOccurs="0"/>
+<xs:element ref="tns:groupid"/>
+<xs:element ref="tns:password" minOccurs="0"/>
+<xs:element ref="tns:userid"/>
+<xs:element ref="tns:username" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:element name="email">
+	<xs:simpleType>
+          <xs:restriction base="xs:string">          
+            <xs:pattern value="[a-zA-Z0-9]+[@][a-zA-Z]+\.[a-zA-Z]{2,6}"/>
+            <xs:maxLength value="25"/>
+          </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+<xs:element name="groupid">
+	<xs:simpleType>
+          <xs:restriction base="xs:integer">   
+            <xs:maxExclusive value="120"/>
+            <xs:minExclusive value="0"/>
+          </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+<xs:element name="password">
+<xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:length value="8"/>
+            <xs:pattern value="[a-zA-Z0-9]+"/>
+          </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+<xs:element type="xs:int" name="userid"/>
+<xs:element name="username">
+	<xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="10"/>
+            <xs:pattern value="[a-zA-Z0-9]+"/>
+          </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+
+
+<xs:complexType name="addEmployeeMethod">
+<xs:sequence>
+<xs:element type="tns:employeebean" name="EmployeeTypeInputParam" minOccurs="0" form="qualified"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addEmployeeMethodResponse">
+<xs:sequence>
+<xs:element type="xs:boolean" name="return"/>
+</xs:sequence>
+</xs:complexType>
+
+</xs:schema>

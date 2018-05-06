@@ -2,24 +2,34 @@ package GeneticAlgorithm;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.Vector;
 
+import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
+
+import org.xml.sax.SAXException;
+
+import TOGeneration.MaliciousGen;
 
 public class GeneticMain {
 	
 	//Number of individuals in each generation
 		private static int POPULATION_SIZE = 300;
-		private static int epochs = 20000;
+		private static int epochs = 1000;
 	//Driver code
-		public static void main(String args[]) throws FileNotFoundException, TransformerException
+		public static void main(String args[]) throws TransformerException, ParserConfigurationException, IOException, SAXException
 		{
+			MaliciousGen mg = new MaliciousGen();
+			String filename = "src/maliciousIp.txt";
+			mg.generate(filename);
+			
 			Initialization in = new Initialization();
-			File f = new File("src/maliciousIp.txt");
+			File f = new File(filename);
 			Scanner sc = new Scanner(f).useDelimiter("\\n");
 			
 			int msgcnt = 0;
@@ -46,6 +56,12 @@ public class GeneticMain {
 				}
 				
 				System.out.println("Initial population created");
+				
+				/*for(Individual indi : population)
+				{
+					System.out.println(indi.getchromosome());
+				}
+				System.out.println();*/
 				while(! found)
 				{
 					// sort the population in increasing order of fitness score
@@ -149,6 +165,9 @@ public class GeneticMain {
 				if(found == true)
 					break;
 			}
+			
+			if(found==false)
+				System.out.println("System cannot be attacked");
 		}
 
 }

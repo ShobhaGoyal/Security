@@ -20,15 +20,14 @@ class Individual
 	private int fitness;
 	//private static String[] array = {"i","love","GeeksforGeeks"};
 	//private static Vector<String> TARGETSTR = new Vector<String>(Arrays.asList(array));
-	private static Vector<String> TARGETSTR = Initialization.TARGETSTR;
+	private static Vector<String> TARGETSTR;
 	//private static String TARGET = "I love GeeksforGeeks";
 	
 	//Valid Genes
-	private static String GENES = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890, .-;:<>_!\"#%&/()=?@${[]}";
-	
-	
-	
-	Individual(){}
+	//private static String GENES = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890, .-;:<>_!'\"#%&/()=?@${[]}";
+	//private static String GENES = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+		
+	Individual(){TARGETSTR = Initialization.TARGETSTR;}
 	
 	static Individual getIndividual(Vector<String> child_chromosome)
 	{
@@ -54,6 +53,7 @@ class Individual
 
 		int n = par1.chromosome.size();
 		
+		
 		for(int j = 0;j<n;j++)
 		{
 			String child_chromosome = "";
@@ -70,27 +70,38 @@ class Individual
 				
 				for(int i = 0;i<len;i++)
 				{
-					// random probability 
-					Random r = new Random();
-					int rint = r.nextInt(101);
-					float p = (float)rint/(float)100;
-	
-					// if prob is less than 0.45, insert gene
-					// from parent 1 
-					if(p < 0.45)
+					if(par1.chromosome.get(j).charAt(i) == TARGETSTR.get(j).charAt(i))
 						child_chromosome += par1.chromosome.get(j).charAt(i);
-	
-					// if prob is between 0.45 and 0.90, insert
-					// gene from parent 2
-					else if(p < 0.90)
+					
+					else if(par2.chromosome.get(j).charAt(i) == TARGETSTR.get(j).charAt(i))
 						child_chromosome += par2.chromosome.get(j).charAt(i);
-	
-					// otherwise insert random gene(mutate), 
-					// for maintaining diversity
+					
 					else
-						child_chromosome += mutated_genes(j);
+					{
+						// random probability 
+						Random r = new Random();
+						int rint = r.nextInt(101);
+						float p = (float)rint/(float)100;
+						
+						// if prob is less than 0.45, insert gene
+						// from parent 1 
+						if(p < 0.45)
+							child_chromosome += par1.chromosome.get(j).charAt(i);
+		
+						// if prob is between 0.45 and 0.90, insert
+						// gene from parent 2
+						else if(p < 0.90)
+						//else
+							child_chromosome += par2.chromosome.get(j).charAt(i);
+		
+						// otherwise insert random gene(mutate), 
+						// for maintaining diversity
+						else
+							child_chromosome += mutated_genes(j);
+					}
 				}
 			}
+			
 			child_chromosome_vector.addElement(child_chromosome);
 		}
 		
@@ -106,6 +117,8 @@ class Individual
 	//string.
 	static int cal_fitness(Vector<String> chromosome)
 	{
+		//System.out.println(TARGETSTR);
+		
 		int n = TARGETSTR.size();
 		
 		int fitness = 0;
@@ -126,6 +139,14 @@ class Individual
 	//Create random genes for mutation
 	static char mutated_genes(int index)
 	{
+		String GENES;
+		
+		Vector<Integer> patternstatus = Initialization.patternstatus;
+		if(patternstatus.get(index) == 1)
+			GENES = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+		else
+			GENES = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890, .-;:<>_!'\"#%&/()=?@${[]}";
+		
 		int len = GENES.length();
 		Random rm = new Random();
 		

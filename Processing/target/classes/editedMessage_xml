@@ -799,3 +799,1109 @@
 </S:Body>
 </S:Envelope>
 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gma&lt;il.com</email>
+<groupid>10</groupid><groupid>10</groupid>
+<password>1; SELECT r FROM m WHERE mkli = m; --</password>
+<userid>20</userid>
+<username>1' OR SLEEP(0) --</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>'10</groupid>
+<password>>apple</password>
+<userid>20</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>10</groupid>
+<password>' OR SLEEP(4145) --</password>
+<userid>20</userid>
+<username>1" OR 1 = 1 --</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email><email>apple@gmail.com</email>
+<groupid>1; SELECT IF (fsg = sucv, 1, 0); --</groupid>
+<password>apple</password>
+<userid>20</userid>
+<username>apple</username><username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">1; CREATE DATABASE mk; --</email>
+<groupid></-27>67326</groupid>
+<password>apple</password>
+<userid>20</userid>
+<username>appl>e</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email><!--</email>
+<groupid>10</groupid>
+<password>apple</password>
+<userid>--><groupid>10</groupid><password>apple</password><userid>20</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>1; TRUNCATE TABLE u; --</groupid>
+<password>1' OR 'a' = 'a</password>
+<userid>20</userid>
+<username>' OR 'a' = 'a</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid></-3>4</groupid>
+<password>apple</password>
+<userid>20</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">" OR 1 = 1 --</email>
+<groupid>1; INSERT INTO l (v) VALUES (crm); --</groupid>
+<password>apple</password>
+<userid>1; DROP TABLE snt; -- </userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">1") OR ("a" = "a</email>
+<groupid>1; SELECT IF (jy = o, 1, 0); --</groupid>
+<password>1; CREATE DATABASE hl; --</password>
+<userid>20</userid><!--</userid>
+<username>--><username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>10</groupid>
+<password>1") OR ("a" = "a</password>
+<userid>1; SHOW DATABASES; --</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>" OR 1 = 1</groupid>
+<password>apple</password>
+<userid>1; SHOW DATABASES; --</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>10</groupid><groupid>10</groupid>
+<password>apple</password>
+<userid>20</userid>
+<username>apple</username><username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email><email>apple@gmail.com</email>
+<groupid>1; UPDATE xo SET yf = i WHERE ie = rwd; --</groupid>
+<password>apple</password><password>apple</password>
+<userid>2'0</userid>
+<username>apple</username><username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid></>-36</groupid>
+<password>apple</password>
+<userid></>+229</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>1 OR 1 = 1</groupid>
+<password>apple</password>
+<userid>20</userid>
+<username>app&gt;le</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>1" OR "a" = "a</groupid>
+<password>apple</password>
+<userid>20</userid>
+<username>1; SELECT xq FROM k WHERE kt = kbgc; --</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email><!--</email>
+<groupid>10</groupid>
+<password>apple</password>
+<userid>20</userid>
+<username>--><groupid>10</groupid><password>apple</password><userid>20</userid><username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">' OR 1 = 1 --</email>
+<groupid>10</groupid><!--</groupid>
+<password>--><password>apple</password>
+<userid>20</userid>
+<username>1; CREATE DATABASE vn; --</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">1; TRUNCATE TABLE e; --</email>
+<groupid>10</groupid>
+<password>1; DELETE FROM r WHERE r = blp; --</password>
+<userid>20</userid>
+<username>1; DELETE FROM jav WHERE m = r; --</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1"></4MY3W0u1x2ofxmP@sDsJOgS>.U</email>
+<groupid></+485>4</groupid>
+<password>ap&amp;ple</password>
+<userid>20</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">1" OR 1 = 1 --</email>
+<groupid>10</groupid>
+<password></I3Su>O2J4</password>
+<userid></>1</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>10</groupid>
+<password>apple</password>
+<userid>1; CREATE TABLE h j VARCHAR\09729\; --</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>' OR SLEEP(68) --</groupid>
+<password>1; DELETE FROM z WHERE bveg = t; --</password>
+<userid>20</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>10</groupid>
+<password>apple</password>
+<userid>20</userid>
+<username>1; UPDATE m SET eqc = g WHERE qceq = nq; --</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>1"0</groupid>
+<password>1; TRUNCATE TABLE yirlr; --</password>
+<userid>1; INSERT INTO ji (oruxtll) VALUES (a); --</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>10</groupid>
+<password>apple</password><password>apple</password>
+<userid>20</userid><!--</userid>
+<username>--><username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">1; SHOW DATABASES; --</email>
+<groupid>1; TRUNCATE TABLE e; --</groupid>
+<password>apple</password>
+<userid>20</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">1; CREATE TABLE a on VARCHAR\3\; --</email>
+<groupid> OR 1 = 1 --</groupid>
+<password>1 OR 1 = 1 --</password>
+<userid>") OR ("a" = "a</userid>
+<username>1; TRUNCATE TABLE ir; --</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>10</groupid>
+<password>a>pple</password>
+<userid>20</userid>
+<username>" OR 1 = 1 --</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>10</groupid>
+<password>apple</password>
+<userid> OR 1 = 1 --</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail>.com</email>
+<groupid>10</groupid>
+<password>1; DELETE FROM oi WHERE dcu = mbsev; --</password>
+<userid>20</userid>
+<username>1; CREATE DATABASE tmytv; --</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">1; SELECT yb FROM a WHERE af = j UNION  SELECT r FROM l WHERE s = xv; --</email>
+<groupid>' OR 1 = 1 --</groupid>
+<password>' OR 1 = 1 --</password>
+<userid>20</userid>
+<username>1; SELECT IF (b = xd, 1, 0); --</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">1; DELETE FROM hox WHERE z = p; --</email>
+<groupid>1'0</groupid>
+<password></Jt>DRw2rG</password>
+<userid>20</userid>
+<username>a&amp;pple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">1; CREATE DATABASE d; --</email>
+<groupid>10</groupid>
+<password>apple</password><password>apple</password>
+<userid>20</userid>
+<username>1; DROP DATABASE xxo; --</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email><email>apple@gmail.com</email>
+<groupid>10</groupid>
+<password>apple</password>
+<userid>20</userid>
+<username>1; SELECT IF (n = b, 1, 0); --</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email><!--</email>
+<groupid>10</groupid>
+<password>--><groupid>10</groupid><password>apple</password>
+<userid>20</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>10</groupid>
+<password>apple</password>
+<userid>20</userid>
+<username>1; SELECT wl FROM u WHERE y = ksndfs; --</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">" OR 1 = 1 --</email>
+<groupid>1; DROP TABLE ulw; -- </groupid>
+<password>apple</password>
+<userid>20</userid>
+<username>1; DROP TABLE ulw; -- </username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1"></Mb5@X>x.VZZjymtG</email>
+<groupid>10</groupid>
+<password>1; DROP TABLE yuw; -- </password>
+<userid>20</userid>
+<username>1' OR 'a' = 'a</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>10</groupid>
+<password>apple</password>
+<userid>20</userid>
+<username>appl&amp;e</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>10</groupid>
+<password>a&amp;pple</password>
+<userid>20</userid>
+<username>apple</username><username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>1; CREATE TABLE ldl ld VARCHAR\6\; --</groupid>
+<password>apple</password>
+<userid>20</userid>
+<username>1; SELECT IF (v = j, 1, 0); --</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">ap<ple@gmail.com</email>
+<groupid>1; SHOW DATABASES; --</groupid>
+<password>apple</password>
+<userid>1; DROP DATABASE hvn; --</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">" OR 1 = 1</email>
+<groupid>' OR SLEEP(8) --</groupid>
+<password>apple</password>
+<userid>20</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1"> OR 1 = 1 --</email>
+<groupid>1'  ORDER BY zyzz; --</groupid>
+<password>' OR 1 = 1</password>
+<userid>20</userid>
+<username>&gt;apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email><email>apple@gmail.com</email>
+<groupid>10</groupid><!--</groupid>
+<password>apple</password>
+<userid>--><password>apple</password><userid>20</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>" OR "a" = "a</groupid>
+<password>a&lt;pple</password>
+<userid>20</userid><!--</userid>
+<username>--><username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email><email>apple@gmail.com</email>
+<groupid>"10</groupid>
+<password>apple</password><!--</password>
+<userid>20</userid>
+<username>--><userid>20</userid><username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">" OR "a" = "a</email>
+<groupid>10</groupid>
+<password>apple</password>
+<userid>1' OR SLEEP(8) --</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">') OR ('a' = 'a</email>
+<groupid>') OR ('a' = 'a</groupid>
+<password></>pvNBqqcj</password>
+<userid>1; SELECT IF (jonc = bv, 1, 0); --</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>10</groupid>
+<password>1; SHOW DATABASES; --</password>
+<userid>20</userid><userid>20</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email><email>apple@gmail.com</email>
+<groupid>'  ORDER BY yuyd; --</groupid>
+<password>apple</password>
+<userid>20</userid>
+<username>1; DROP DATABASE l; --</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>10</groupid>
+<password>apple</password>
+<userid>20</userid>
+<username>a'pple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>10</groupid><!--</groupid>
+<password>--><password>apple</password>
+<userid>20</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>10</groupid>
+<password>apple</password><!--</password>
+<userid>--><userid>20</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>10</groupid>
+<password>apple</password><!--</password>
+<userid>--><userid>20</userid>
+<username>apple</username><username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>10</groupid>
+<password>1; INSERT INTO q (r) VALUES (hy); --</password>
+<userid></+52506>5</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">1" OR "a" = "a</email>
+<groupid>10</groupid>
+<password>1") OR ("a" = "a</password>
+<userid>1' OR 'a' = 'a</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid></->044</groupid>
+<password>apple</password><password>apple</password>
+<userid>20</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>10</groupid>
+<password></0g>2PH9a2</password>
+<userid>20</userid>
+<username>apple</username><username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>1" OR 1 = 1 --</groupid>
+<password>apple</password>
+<userid>1; CREATE DATABASE bo; --</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>10</groupid>
+<password>apple</password>
+<userid>20</userid><!--</userid>
+<username>--><username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">>apple@gmail.com</email>
+<groupid>10</groupid>
+<password></lK>41G6lW</password>
+<userid>20</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">1; SHOW DATABASES; --</email>
+<groupid>10</groupid>
+<password>apple</password>
+<userid>20</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>10</groupid>
+<password>apple</password>
+<userid>') OR ('a' = 'a</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>1; SELECT IF (d = v, 1, 0); --</groupid>
+<password>") OR ("a" = "a</password>
+<userid>20</userid>
+<username>apple</username><username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">" OR 1 = 1</email>
+<groupid>10</groupid><!--</groupid>
+<password>apple</password>
+<userid>--><password>apple</password><userid>20</userid>
+<username>1; SELECT i FROM s WHERE b = zr UNION  SELECT tr FROM e WHERE vwm = lm; --</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>1; DELETE FROM scgjp WHERE fc = fd; --</groupid>
+<password>apple</password>
+<userid></>3</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>1; SELECT x FROM h WHERE v = z UNION ALL SELECT ji FROM z WHERE n = yd; --</groupid>
+<password>apple</password>
+<userid>1" OR "a" = "a</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1"></9>9p8@O.Ua</email>
+<groupid>10</groupid>
+<password>apple</password>
+<userid>20</userid>
+<username></1>6gF</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email><!--</email>
+<groupid>10</groupid>
+<password>--><groupid>10</groupid><password>apple</password>
+<userid>1; TRUNCATE TABLE qt; --</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email><email>apple@gmail.com</email>
+<groupid>1 OR 1 = 1</groupid>
+<password>apple</password>
+<userid>1" OR 1 = 1 --</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>1&amp;0</groupid>
+<password>apple</password>
+<userid>20</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">1' OR SLEEP(5) --</email>
+<groupid>10</groupid><groupid>10</groupid>
+<password>1; TRUNCATE TABLE h; --</password>
+<userid>20</userid>
+<username>" OR "a" = "a</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>" OR "a" = "a</groupid>
+<password></2>XzBMQe1</password>
+<userid>20</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1"></lnDDoSQ96;R&sC>&@J.BW</email>
+<groupid>10</groupid>
+<password>apple</password>
+<userid>20</userid>
+<username></>Fe</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">1; CREATE TABLE p q VARCHAR\5\; --</email>
+<groupid>10</groupid>
+<password>a"pple</password>
+<userid>20</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email class="email" id="1">apple@gmail.com</email>
+<groupid>10</groupid><!--</groupid>
+<password>--><password>apple</password>
+<userid>' OR 'a' = 'a</userid>
+<username>apple</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+

@@ -7,7 +7,7 @@ import org.apache.commons.lang3.StringUtils;
 
 /** Test class for XSDParser.
  * 
- * @author José Ángel Arrechea
+ * @author Josï¿½ ï¿½ngel Arrechea
  *
  */
 public class XSDParserTest {
@@ -16,7 +16,7 @@ public class XSDParserTest {
 	  
     try {
       URL url = XSDParserTest.class.getClassLoader().getResource(
-          "xsd/schema.xsd");
+          "xsd/schema3.xsd");
   
       XSDElement mainElement = XSDParser.parseXSD(url, data);
      /* // Print all data

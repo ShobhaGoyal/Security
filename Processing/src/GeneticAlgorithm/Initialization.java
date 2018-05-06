@@ -21,11 +21,11 @@ import ParseXML.XMLParser;
 public class Initialization {
 	
 	private static int POPULATION_SIZE = 300;
-	public static Vector<Vector<String>> genetic_input = new Vector<Vector<String>>();
+	public static Vector<Vector<String>> genetic_input;
 	private Vector<Integer> length = new Vector<Integer>();
 	public static Vector<String> TARGETSTR;
 	public static Vector<MNode> mnode_Rest = new Vector<MNode>();
-	
+	public static Vector<Integer> patternstatus = new Vector<Integer>();
 	//private int attributecount = 0;
 	
 	private boolean getTargetInput(Scanner sc)
@@ -78,7 +78,7 @@ public class Initialization {
 	
 	public boolean generateGeneticIp(Scanner sc) throws TransformerException, FileNotFoundException
 	{
-		
+		genetic_input = new Vector<Vector<String>>();
 		boolean status = getTargetInput(sc);
 		if(status == false)
 			return false;
@@ -93,11 +93,12 @@ public class Initialization {
 		
 		//System.out.println(mnodelist.size());
 		int j=0;
+		int patternaddonce = 0;
+		
 		while(j++<POPULATION_SIZE)
 		{
 			Vector<String> temp = new Vector<String>();
 			int index = -1;
-			
 			
 			for(int i=0;i<mnodelist.size();i++)
 			{			
@@ -127,11 +128,18 @@ public class Initialization {
 					
 					if(mnode.getRestriction().getPattern()!=null && !mnode.getRestriction().getPattern().isEmpty())
 					{
-						pattern = (String)mnode.getRestriction().getPattern().get(0);						
+						pattern = (String)mnode.getRestriction().getPattern().get(0);
+						//System.out.println(pattern);
+						if(patternaddonce == 0)
+							patternstatus.addElement(1);
 					}
 					else
-						pattern = "[a-z0-9A-Z`~!@#$%^&*()_{}-+=:;\"'<,>.?/a-z0-9A-Z`~!@#$%^&*()_{}-+=:;\\\"'<,>.?/a-z0-9A-Z`~!@#$%^&*()_{}-+=:;\\\"'<,>.?/]";
-					
+					{
+						pattern = "[a-z0-9A-Z`~!@#$%^&*()_{}-+=:;\"'<,>.?/]";
+						if(patternaddonce == 0)
+							patternstatus.addElement(0);
+					}
+						//pattern = "[a-z0-9A-Z]";
 				//	if(st==1)
 						pattern += "{"+len+"}";
 					//else
@@ -147,6 +155,8 @@ public class Initialization {
 				}				
 			}
 			genetic_input.add(temp);
+			patternaddonce = 1;
+			
 		}
 		System.out.println(genetic_input);
 		return true;

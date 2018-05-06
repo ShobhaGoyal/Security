@@ -58,6 +58,7 @@ public class EmployeeService implements EmployeeSEI {
 			}
 			
 			query = "insert into employee(groupid,username,password,email) values("+groupid+",'"+username+"','"+password+"','"+email+"');";
+			System.out.println("----------rrrrrrrrrrrrrrr---------\n"+query);
 			stmt.executeUpdate(query);
 			con.close();
 		}
@@ -66,7 +67,7 @@ public class EmployeeService implements EmployeeSEI {
 			System.out.println(query+"    "+e);
 			return false;
 		}
-
+		
 		return true;
 	}
 
